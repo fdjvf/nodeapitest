@@ -33,11 +33,11 @@ app.use(methodOverride());
 
 
 // Import Models and controllers
-
+/*
 var models     = require('./Models/User')(app, mongoose);
 
 var UserCtrl = require('./Controllers/UsersController');
-
+*/
 // Example Route
 
 var router = express.Router();
@@ -45,7 +45,7 @@ router.get('/', function(req, res) {
   res.send("Hello world!");
 });
 app.use(router);
-
+/*
 // API routes
 var myusers = express.Router();
 myusers.route('/users')
@@ -56,7 +56,7 @@ myusers.route('/users')
 
 
 app.use('/api', myusers);
-
+*/
 
 
 // Start server
